@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content='True' name='HandheldFriendly' />
+		<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+		<meta name="viewport" content="width=device-width" />
+		
+		<title> Bower test </title>
+		
+		<style>
+			#this-button {
+				width: 6em;
+				height: 2.5em;
+				background-color: black;
+				color: white;
+				border-radius: 10%;
+			}
+		</style>
+		
+		<script src="www/public/js/main.js"></script>
+		<script>
+			$(document).on('click', '#this-button', function(event) {
+				var text = 'this worked with jQuery';
+				
+				event.preventDefault();
+				
+				$('#output').append(text);
+			});
+		</script>
+	</head>
+	
+	<body>
+		
+		<button id="this-button"> Push me </button>
+		<p id="output"></p>
+		
+	</body>
+</html>
+	
