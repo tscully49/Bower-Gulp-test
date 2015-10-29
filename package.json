@@ -1,6 +1,11 @@
 {
   "name": "test_project",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tscully49/Bower-Gulp-test.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
